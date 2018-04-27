@@ -1,0 +1,330 @@
+/********************
+* CHRONIK           *
+********************/
+.objects-chronik-area {
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.objects-chronik-area .objects-chronik-items {
+  padding: 5px;
+  clear: left;
+  cursor: pointer;
+}
+
+.objects-chronik-area .objects-chronik-monthheader {
+  margin-top: 50px;
+  margin-bottom:15px;
+}
+
+.objects-chronik-area .objects-chronik-items .objects-chronik-items-datum {
+  float: left;
+  /*margin-right: 70px;*/
+  width:140px;
+}
+
+.objects-chronik-area .objects-chronik-items .objects-chronik-items-txt {
+  float: left;
+}
+
+.objects-chronik-area .objects-chronik-yearsubarea{
+  margin-top:50px;
+}
+
+.objects-selectorchronik-area {
+  width: 250px;
+  margin-left: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  background: -webkit-linear-gradient(right, #808080, #fff, #fff, #fff, #fff, #808080);
+  border: 5px solid #d1cfcf;
+}
+.objects-selectorchronik-area .objects-selectorchronik-itemslist {
+  background-color: #fff;
+  height: 35px;
+  padding-left: 28px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor:pointer;
+}
+.objects-selectorchronik-area .objects-selectorchronik-items{
+  padding-top: 10px;
+  list-style:none;
+  float:left;
+}
+.objects-selectorchronik-area .objects-selectorchronik-items a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #3f9e37;
+}
+.objects-selectorchronik-area .flex-direction-nav a {
+  opacity: 1;
+  font-size: 0px;
+}
+.objects-selectorchronik-area .flex-direction-nav .flex-prev {
+  left: -25px;
+}
+.objects-selectorchronik-area .flex-direction-nav .flex-next {
+  right: -25px;
+}
+.objects-selectorchronik-area .flex-direction-nav a:before{
+  font-size:30px;
+  margin-top:5px;
+}
+
+/*CHRONIK DETAILS*/
+.objects-chronikdetail-area {
+  padding:20px;
+}
+
+
+/********************
+*     Zeistrahl     *
+********************/
+
+.objects-epocheslider {
+  margin: auto;
+  width:90%;
+  position:relative;
+  margin-top:-60px;
+}
+
+.objects-epochesliderflexslider {
+  background-color: transparent;
+  border: 0px;
+  margin: 0;
+}
+.objects-epochesliderflexslider .flex-viewport {
+  padding-bottom:5px;
+}
+.objects-epochesliderflexslider .epocheslider-list .epocheslider-item {
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+  box-shadow: 2px 1px 2px #888888;
+  list-style: none;
+  cursor: pointer;
+}
+.objects-epochesliderflexslider .epocheslider-list .epocheslider-item_active {
+  background-color: #ffc9c9;
+}
+
+.objects-epochesliderflexslider li a{
+  opacity:1;
+  text-decoration:none;
+  border:0;
+}
+.objects-epochesliderflexslider li a:focus {
+  outline: none;
+}
+
+.objects-epochesliderflexslider .epocheslider-list .epocheslider-item-titel {
+  margin: 0;
+  padding: 11px 0;
+  border-bottom: 3px solid #454545;
+  color: #454545;
+}
+.objects-epochesliderflexslider .epocheslider-list .epocheslider-item_active .epocheslider-item-titel {
+  border-bottom: 3px solid #dd0202;
+}
+
+.objects-epochesliderflexslider .epocheslider-list .epocheslider-item-year {
+  margin: 0;
+  padding: 11px 0;
+  color: #454545;
+}
+
+.epocheslider-img-info,
+.epocheslider-img-close {
+  background-color: rgba(239, 239, 239,.5);
+  border-bottom-left-radius: 50px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.epocheslider-img-info .epocheslider-ico-info,
+.epocheslider-img-close .epocheslider-ico-close {
+  background-color: rgba(239, 239, 239,.5);
+  border: 2px solid #dd0202;
+  color: #dd0202;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  float: right;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.epocheslider-img-infocontent {
+  background-color: rgba(239, 239, 239,.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display:none;
+}
+.epocheslider-img-infocontent-txt{
+  margin-left:50px;
+}
+
+
+.objects-epochedetails-area,
+.objects-epoche-buecher-area,
+.objects-epoche-buecher-content-area,
+.objects-epoche-zeitstrahl-content-area,
+.objects-epochezeitstrahldetails-description {
+  margin: 0 0 50px 50px;
+  width: 60%;
+}
+.maintitle-zeitstrahl {
+  margin: 0 0 20px 50px;
+  width: 60%;
+}
+
+.objects-epochedetails-description,
+.objects-epoche-buecher-description,
+.objects-epoche-zeitstrahl-content-area,
+.objects-epoche-buecher-content,
+.objects-epoche-zeitstrahl-line {
+  box-shadow: 3px 3px 8px #888888;
+  padding: 25px 50px 25px 50px;
+  background-color: #FFFFFF;
+}
+
+.objects-epoche-buecher-content .epoche-buecher-content-list{
+  list-style:none;
+  margin:0px;
+  padding-left:0px;
+}
+.objects-epoche-buecher-content .epoche-buecher-content-item {
+  padding-bottom: 10px;
+}
+
+.objects-epoche-buecher-content .epoche-buecher-content-link {
+  text-decoration: none;
+  color: #454545;
+}
+.epoche-buecher-content-item .ico-epoche-buecher-arrow {
+  float:right;
+  margin-top:-3px;
+  cursor:pointer;
+}
+
+.objects-epoche-buecher-content .epoche-buecher-content-item:hover,
+.objects-epoche-buecher-content .epoche-buecher-content-link:hover {
+  color: #888;
+}
+
+/********************
+*     ZEITSTRAHL    *
+********************/
+
+.objects-epoche-zeitstrahl-line .epoche-zeitstrahl-themen-list {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 150px;
+  float: left;
+}
+
+.objects-epoche-zeitstrahl-line .epoche-zeitstrahl-themen-item {
+  min-height: 30px;
+}
+.objects-epoche-zeitstrahl-line .epoche-zeitstrahl-themen-item input {
+  float: left;
+  margin-right:15px;
+}
+
+.objects-epoche-zeitstrahl-line .objects-epoche-zeitstrahl-strahl{
+  margin-left:170px;
+}
+
+  /********************
+*     THEME Farben  *
+********************/
+.objects-epoche-zeitstrahl-line .zeistrahl-themecolor_3255 {
+  color: red;
+}
+.objects-epoche-zeitstrahl-line .zeistrahl-themecolor_3256 {
+  color: blue;
+}
+.objects-epoche-zeitstrahl-line .zeistrahl-themecolor_3257 {
+  color: teal;
+}
+.objects-epoche-zeitstrahl-line .zeistrahl-themecolor_3258 {
+  color: aqua;
+}
+.objects-epoche-zeitstrahl-line .zeistrahl-themecolor_3255 {
+  color: red;
+}
+
+.objects-epoche-zeitstrahl-line .zeistrahl-item-themecolor_3255 {
+  background-color: red;
+}
+.objects-epoche-zeitstrahl-line .zeistrahl-item-themecolor_3256 {
+  background-color: blue;
+  color: white;
+}
+.objects-epoche-zeitstrahl-line .zeistrahl-item-themecolor_3257 {
+  background-color: teal;
+  color:white;
+}
+.objects-epoche-zeitstrahl-line .zeistrahl-item-themecolor_3258 {
+  background-color: aqua;
+}
+/********************
+*     LIGHTBOX      *
+********************/
+.light--infobox {
+  background-color: rgba(0, 0, 0, .7);
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99999;
+}
+
+.light--infobox > .light--infobox-inner {
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 60%;
+  min-height:700px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .9);
+}
+
+.light--infobox-inner > iframe {
+  width: 100%;
+  padding: 20px 10px 30px 20px;
+}
+
+.light--infobox-inner .btn_close_objlightbox,
+.light--infobox-inner.btn_close_objlightbox:hover,
+.light--infobox-inner.btn_close_objlightbox:active {
+  display: block;
+  position: absolute;
+  background-image: url(../images/ico-del.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 26px;
+  width: 26px;
+  margin: 0;
+  padding: 0;
+  right: -13px;
+  top: -13px;
+  box-shadow: 0 2px 1px -1px #000;
+  background-color: #a2a2a2;
+  border-radius: 3px;
+  cursor: pointer;
+}
