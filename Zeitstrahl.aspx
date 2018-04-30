@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" ValidateRequest="false" Inherits="ZRDG._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Zeitstrahl.aspx.cs" ValidateRequest="false" Inherits="ZRDG.Zeitstrahl" %>
 
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -124,71 +124,66 @@
         </div>
     </div>
 </nav>
-<div id="carousel">
-    <div class="flexslider">
-        <ul class="slides">
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+    <div id="carousel">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="img/1920x1270.png" />
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                </li>
+                <li>
+                    <img src="img/1920x1270.png" />
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                </li>
+                <li>
+                    <img src="img/1920x1270.png" />
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                </li>
+                <li>
+                    <img src="img/1920x1270.png" />
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="custom-navigation d-flex justify-content-between">
-        <a href="#" class="flex-prev"><span>Vorherige</span></a>
-        <a href="#" class="flex-next"><span>Nächste</span></a>
-    </div>
-</div>
+                </li>
+            </ul>
+        </div>
+        <div class="custom-navigation d-flex justify-content-between">
+            <a href="#" class="flex-prev"><span>Vorherige</span></a>
+            <a href="#" class="flex-next"><span>Nächste</span></a>
+        </div>
+      </div>
 
     </header>
     <main id="main-content">        
       <div class="container">
-            <div class="row">
-                <div class="sidebar col-md-3 order-md-2">
-                    <asp:PlaceHolder ID="pholder_SubNav" runat="server" />                    
-                </div>
-                <div class="content col-md-9 order-md-1 tab-content">                    
-                  <asp:PlaceHolder ID="pholder" runat="server" />
-                </div>
+            <div class="row">              
+              <asp:PlaceHolder ID="pholder" runat="server" />
             </div>
         </div>
     </main>
