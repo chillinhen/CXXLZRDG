@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="css/flexslider.css" media="screen">
   <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
   <link rel="stylesheet" href="css/bootstrap.css" media="all">
+            		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/dragdealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <script src="js/modernizr-2.7.1.min.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <title>Dummy-Title Plattform Ostbelgische Geschichte</title>
 </head>
 <body class="color-1">
@@ -175,7 +177,7 @@
 </div>
     </header>
     <main id="main-content">        
-      <div class="container-fluid">
+      <div class="container">
             <div class="row">
                 <div class="sidebar col-md-3 order-md-2">
                     <asp:PlaceHolder ID="pholder_SubNav" runat="server" />                    
@@ -380,5 +382,55 @@
   <script src="js/jquery.mousewheel.js"></script>
 <script src="js/customize.js"></script>
 <script src="js/helper.js"></script>
+<script src="js/dragdealer.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/dragslideshow.js"></script>
+<script>
+    (function () {
+
+        var overlay = document.getElementById('overlay'),
+//					overlayClose = overlay.querySelector( 'button' ),
+//					chronik = document.getElementById( 'objects-selectorchronik-area' )
+                switchBtnn = document.getElementById('slider-switch'),
+                toggleBtnn = function () {
+                    if (slideshow.isFullscreen) {
+                        classie.add(switchBtnn, 'view-maxi');
+                    } else {
+                        classie.remove(switchBtnn, 'view-maxi');
+                    }
+                },
+                toggleCtrls = function () {
+                    if (!slideshow.isContent) {
+                        classie.add(header, 'hide');
+                    }
+                },
+                toggleCompleteCtrls = function () {
+                    if (!slideshow.isContent) {
+                        classie.remove(header, 'hide');
+                    }
+                },
+                slideshow = new DragSlideshow(document.getElementById('slideshow'), {
+                    // toggle between fullscreen and minimized slideshow
+                    onToggle: toggleBtnn,
+                    // toggle the main image and the content view
+                    onToggleContent: toggleCtrls,
+                    // toggle the main image and the content view (triggered after the animation ends)
+                    onToggleContentComplete: toggleCompleteCtrls
+                }),
+                toggleSlideshow = function () {
+                    slideshow.toggle();
+                    toggleBtnn();
+                },
+                closeOverlay = function () {
+                    classie.add(overlay, 'hide');
+                };
+
+        // toggle between fullscreen and small slideshow
+        switchBtnn.addEventListener('click', toggleSlideshow);
+        // close overlay
+        //overlayClose.addEventListener( 'click', closeOverlay );
+
+    }());
+</script>
 </body>
 </html>
