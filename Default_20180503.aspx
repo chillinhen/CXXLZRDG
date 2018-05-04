@@ -26,23 +26,20 @@
         <!-- Search & Language Select -->
         <div class="d-flex mr-auto justify-content-between align-items-center">
             <div class="dropdown search">
-                <div class="btn-search" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></div>
-                <div class="dropdown-menu" aria-labelledby="dropdownSearch">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
+            <div class="d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">Logo ZOG</a>
             <div class="language-select">
-                <select class="custom-select" id="selectLanguage">
-                    <option selected>DE</option>
-                    <option value="">FR</option>
-                </select>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">De</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Fr</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nl</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gb</a></li>
+                    <li class="nav-item"><a class="nav-link search" href="#"><span>Suche</span></a></li>
+                </ul>
             </div>
+            <a class="ob-logo" href="#">Ostbelgien-Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         </div>
-        <a class="navbar-brand" href="index.php">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
     </div>
 </div>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -180,9 +177,7 @@
 </div>
 
     </header>
-    <main id="main-content">
-      <div class="intro">
-      </div>        
+    <main id="main-content">        
       <div class="container">
             <div class="row">
                 <div class="sidebar col-md-3 order-md-2">

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" ValidateRequest="false" Inherits="ZRDG._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Zeitstrahl.aspx.cs" ValidateRequest="false" Inherits="ZRDG.Zeitstrahl" %>
 
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/addons/CXXLZRDG/desktop/css/draggableslideshow/dragdealer.css" />
 	<link rel="stylesheet" type="text/css" href="/addons/CXXLZRDG/desktop/css/draggableslideshow/component.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <script src="js/modernizr-2.7.1.min.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <title>Dummy-Title Plattform Ostbelgische Geschichte</title>
@@ -22,7 +23,7 @@
       <asp:ScriptManager ID="ScriptManager2" runat="server"></asp:ScriptManager>
     <header id="header">
         <div class="top-nav">
-    <div class="container">
+    <div class="container d-flex">
         <!-- Search & Language Select -->
         <div class="d-flex mr-auto justify-content-between align-items-center">
             <div class="dropdown search">
@@ -124,73 +125,61 @@
         </div>
     </div>
 </nav>
-<div id="carousel">
-    <div class="flexslider">
-        <ul class="slides">
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
-                        </div>
+<div id="carouselDummy" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselDummy" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselDummy" data-slide-to="1"></li>
+        <li data-target="#carouselDummy" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="http://via.placeholder.com/1920x1270" alt="First slide">
+            <div class="carousel-caption container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Plattform ostbelgische Geschichte</h2>
+                        <p>Information und Werkzeuge für Neugierige und Experten</p>
                     </div>
                 </div>
-            </li>
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
-                        </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="http://via.placeholder.com/1920x1270" alt="Second slide">
+            <div class="carousel-caption container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
                     </div>
                 </div>
-            </li>
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
-                        </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="http://via.placeholder.com/1920x1270" alt="Third slide">
+            <div class="carousel-caption container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
                     </div>
                 </div>
-            </li>
-            <li>
-                <img src="img/1920x1270.png" />
-                <div class="carousel-caption">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
-    <div class="custom-navigation d-flex justify-content-between" style="display:none !important;">
-        <a href="javascript:void(0);" class="flex-prev"><span>Vorherige</span></a>
-        <a href="javascript:void(0);" class="flex-next"><span>Nächste</span></a>
-    </div>
+    <a class="carousel-control-prev" href="#carouselDummy" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselDummy" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
-
     </header>
-    <main id="main-content">
-      <div class="intro">
-      </div>        
+    <main id="main-content">        
       <div class="container">
-            <div class="row">
-                <div class="sidebar col-md-3 order-md-2">
-                    <asp:PlaceHolder ID="pholder_SubNav" runat="server" />                    
-                </div>
-                <div class="content col-md-9 order-md-1 tab-content">                    
-                  <asp:PlaceHolder ID="pholder" runat="server" />
-                </div>
+            <div class="row">              
+              <asp:PlaceHolder ID="pholder" runat="server" />
             </div>
         </div>
     </main>
@@ -379,9 +368,7 @@
     </form>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script type="text/javascript">
-  if (window.jQuery == undefined) document.write('<script src="js/jquery-3.3.1.min.js">\x3C/script>');
-</script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
  <script defer src="js/jquery.flexslider.js"></script>
