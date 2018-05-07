@@ -1,5 +1,5 @@
 ﻿var network = null, nodesdata=null;
-var default_nodesize = 100, default_nodeheight_width = 200, default_edge_len=800;
+var default_nodesize = 130, default_nodeheight_width = 240, default_edge_len=680;
 
 // Called when the Visualization API is loaded.
 function draw(inputNodes) {
@@ -14,7 +14,6 @@ function draw(inputNodes) {
     edges: getEdgeData(inputData)
   };
   var options = {
-      
     interaction: {
       zoomView: true,
       dragView: true,
@@ -24,27 +23,18 @@ function draw(inputNodes) {
     nodes: {
       borderWidth: 8,
       size: default_nodesize,
-      mass: 1,
-     // physics: true,
-       //scaling: {
-         //  min:14,
-           //max:30
-       //},
+      mass: 3,
       heightConstraint: { minimum: default_nodeheight_width, valign: 'middle' },
       widthConstraint: { minimum: default_nodeheight_width, maximum: default_nodeheight_width },
       color: {
         border: '#3b98c6',
-        background: '#FFFFFF',
-        hover: {
-        border: '#333333',
-        background: '#666666'
-      }
+        background: '#FFFFFF'
       },
       font: { align: 'center', color: '#FFFFFF',size:25 },
       shapeProperties: {
         useBorderWithImage: true
       },
-      shadow: false
+      shadow: true
     },
     edges: {
       color: { color: '#b7b5b5' },
