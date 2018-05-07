@@ -173,9 +173,15 @@
             </li>
         </ul>
     </div>
+<<<<<<< HEAD
     <div class="custom-navigation d-flex justify-content-between" style="display:none !important;">
         <a href="javascript:void(0);" class="flex-prev"><span>Vorherige</span></a>
         <a href="javascript:void(0);" class="flex-next"><span>Nächste</span></a>
+=======
+    <div class="custom-navigation d-flex justify-content-between">
+        <a href="#" class="flex-prev"><span>Vorherige</span></a>
+        <a href="#" class="flex-next"><span>Nächste</span></a>
+>>>>>>> d02db04771f8dfb337e92d766aed7dc62858d7c4
     </div>
 </div>
 

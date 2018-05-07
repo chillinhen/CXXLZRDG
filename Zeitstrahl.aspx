@@ -17,7 +17,11 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <title>Dummy-Title Plattform Ostbelgische Geschichte</title>
 </head>
+<<<<<<< HEAD
 <body class="">
+=======
+<body class="color-1">
+>>>>>>> d02db04771f8dfb337e92d766aed7dc62858d7c4
   <form id="form2" runat="server">
       <asp:ScriptManager ID="ScriptManager2" runat="server"></asp:ScriptManager>
     <header id="header">
@@ -173,9 +177,15 @@
                 </li>
             </ul>
         </div>
+<<<<<<< HEAD
         <div class="custom-navigation d-flex justify-content-between" style="display:none !important;">
             <a href="javascript:void(0);" class="flex-prev"><span>Vorherige</span></a>
             <a href="javascript:void(0);" class="flex-next"><span>Nächste</span></a>
+=======
+        <div class="custom-navigation d-flex justify-content-between">
+            <a href="#" class="flex-prev"><span>Vorherige</span></a>
+            <a href="#" class="flex-next"><span>Nächste</span></a>
+>>>>>>> d02db04771f8dfb337e92d766aed7dc62858d7c4
         </div>
       </div>
 
@@ -372,9 +382,13 @@
     </form>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<<<<<<< HEAD
 <script type="text/javascript">
   if (window.jQuery == undefined) document.write('<script src="js/jquery-3.3.1.min.js">\x3C/script>');
 </script>
+=======
+<script src="js/jquery-3.3.1.min.js"></script>
+>>>>>>> d02db04771f8dfb337e92d766aed7dc62858d7c4
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
  <script defer src="js/jquery.flexslider.js"></script>
