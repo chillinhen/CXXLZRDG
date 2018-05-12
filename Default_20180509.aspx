@@ -180,7 +180,6 @@
         <ul class="slides">
             <li>
                 <img src="img/1920x1270.png" />
-                <svg><use xlink:href="#banner-overlay"></use></svg>
                 <div class="carousel-caption">
                     <div class="row">
                         <div class="col-6">
@@ -192,7 +191,6 @@
             </li>
             <li>
                 <img src="img/1920x1270.png" />
-                <svg><use xlink:href="#banner-overlay"></use></svg>
                 <div class="carousel-caption">
                     <div class="row">
                         <div class="col-6">
@@ -204,7 +202,6 @@
             </li>
             <li>
                 <img src="img/1920x1270.png" />
-                <svg><use xlink:href="#banner-overlay"></use></svg>
                 <div class="carousel-caption">
                     <div class="row">
                         <div class="col-6">
@@ -216,7 +213,6 @@
             </li>
             <li>
                 <img src="img/1920x1270.png" />
-                <svg><use xlink:href="#banner-overlay"></use></svg>
                 <div class="carousel-caption">
                     <div class="row">
                         <div class="col-6">
@@ -227,6 +223,7 @@
                 </div>
             </li>
         </ul>
+<svg><use xlink:href="#banner-overlay"></use></svg>
     </div>
     <div class="custom-navigation d-flex justify-content-between" style="display:none !important;">
         <a href="javascript:void(0);" class="flex-prev"><span>Vorherige</span></a>
